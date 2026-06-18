@@ -127,4 +127,18 @@ http://localhost:3000
 * Password Reset
 * Docker Deployment
 * PostgreSQL Support
-* Role-Based Access Control
+* Role-Based Access Control 
+
+## Assumptions Made During Development
+
+1. Each user is uniquely identified by their email address, and duplicate email registrations are not allowed.
+
+2. The application is intended for small to medium-scale usage; therefore, SQLite was chosen as the database for simplicity and ease of deployment.
+
+3. User authentication is limited to email and password credentials, and third-party authentication providers (Google, GitHub, etc.) are outside the current scope.
+
+4. The backend APIs are designed to be stateless, enabling future migration to scalable deployment environments without significant architectural changes.
+
+5. User profile data consists only of essential information (name and email), and advanced profile features such as profile pictures, preferences, or social integrations are not considered.
+
+6. The project focuses on demonstrating secure authentication and user management workflows rather than enterprise-level security features such as multi-factor authentication, role-based access control, or audit logging.
